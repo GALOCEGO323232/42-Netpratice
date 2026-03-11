@@ -4,55 +4,81 @@
 
 ## Description
 
-NetPractice is a training project designed to introduce fundamental networking concepts.
-The goal of the project is to understand how devices communicate within a network and how proper network configuration allows communication between different hosts.
+NetPractice is an introductory training project focused on fundamental computer networking concepts. The goal of the project is to understand how devices communicate within a network and how proper network configuration allows communication between different hosts.
 
-In this project, users must configure network parameters such as IP addresses, subnet masks, and default gateways to ensure communication between machines in different network segments.
+The project consists of **10 progressive levels**, each presenting a non-functional network topology. The objective is to analyze the network diagram and correct the configuration by adjusting parameters such as IP addresses, subnet masks, gateways, and routing paths.
 
-The exercises simulate real networking scenarios involving routers, switches, and multiple subnets. Each level requires analyzing the network topology and configuring the correct addressing scheme.
+Through these exercises, students gain practical experience with IP addressing, subnetting, and routing, while developing a deeper understanding of how data travels between devices across multiple networks.
 
 ---
 
-## Instructions
+# Instructions
 
-### Running the training interface
+## Running the Training Interface
 
-1. Clone or download the project repository.
-2. Navigate to the project directory.
-3. Open the training interface by opening the following file in a web browser:
+To run the NetPractice training interface:
+
+1. Download the project files from the 42 intranet.
+2. Extract the files to any directory on your computer.
+3. Open the training interface by opening the file:
 
 ```
 index.html
 ```
 
-You can open it by double-clicking the file or loading it directly in your browser.
+4. Enter your **42 intranet login** in the required field.
+5. Click **Start!** to begin the training.
+6. Select a level and carefully read the objective.
 
-### Using the interface
+---
 
-1. Select a level from the interface.
-2. Analyze the network diagram and the devices.
-3. Configure the required parameters:
+## Using the Interface
+
+For each level:
+
+1. Analyze the network diagram and identify the devices involved.
+2. Modify only the **editable fields** (non-greyed fields).
+3. Configure the required network parameters:
 
    * IP address
    * Subnet mask
    * Default gateway
 4. Ensure all hosts can communicate correctly.
-5. Validate your configuration.
+5. Click **Check again** to validate your solution.
 
-### Exporting configurations
-
-Once a level is completed successfully, export the configuration using the export option available in the interface.
-This will generate a configuration file for that level.
+The logs displayed at the bottom of the interface can help identify issues such as invalid IP addresses or missing gateways.
 
 ---
 
-## Submission
+## Exporting Configurations
 
-For submission, the repository must contain **10 exported configuration files**, one for each level.
+After successfully completing a level:
 
-All files must be placed **at the root of the repository**.
+1. Click **Get my config** to export the configuration.
+2. Download the generated configuration file.
+3. Save the file using the naming convention:
 
-Example:
+```
+level1.json
+level2.json
+level3.json
+...
+level10.json
+```
+
+⚠️ Make sure your **42 login is entered before exporting**, since the system generates configurations based on your login.
+
+---
+
+# Submission Requirements
+
+Your repository must contain:
+
+* **10 exported configuration files (one per level)**
+* Files must be named `level1.json` through `level10.json`
+* All files must be placed **at the root of the repository**
+
+Example structure:
 
 ```
 level1.json
@@ -68,35 +94,47 @@ level10.json
 README.md
 ```
 
+Each file must represent a **valid and complete solution** for its respective level.
+
 ---
 
-## Resources
+# Resources
 
-### Networking concepts studied
+## Networking Concepts Studied
 
-The following networking concepts were studied during this project:
+This project covers several essential networking concepts:
 
-* TCP/IP addressing
-* Subnet masks
-* Default gateway
-* Routers
-* Switches
-* OSI model layers
-* Basic routing principles
-* Network segmentation
+* **TCP/IP Addressing** — understanding how IP addresses are structured and assigned
+* **Subnet Masks** — determining which devices belong to the same network
+* **Default Gateway** — the router responsible for forwarding packets to other networks
+* **Routers** — devices that connect different networks and route packets between them
+* **Switches** — devices that connect multiple devices within the same local network
+* **Routing Tables** — structures used by routers to determine packet forwarding paths
+* **OSI Model Layers** — conceptual model describing how data moves across a network
+* **Network Segmentation** — dividing networks into smaller subnetworks
 
-### Documentation and references
+Understanding these concepts is essential for designing and troubleshooting real-world networks.
 
-Networking documentation and educational materials were consulted to understand the theoretical concepts behind network communication and addressing.
+---
 
-### Use of AI
+## References
 
-Artificial Intelligence tools were used as a learning aid to understand networking theory.
+Some useful resources for networking concepts include:
+
+* RFC 791 — Internet Protocol
+* Subnetting tutorials and subnet calculators
+
+---
+
+## Use of AI
+
+Artificial Intelligence tools were used as a **learning aid** during this project.
 
 AI was used to:
 
-* Explain concepts such as TCP/IP addressing and subnetting
-* Clarify how routers, switches, and gateways operate
-* Provide theoretical explanations of networking models like the OSI model
+* Help understand networking concepts such as subnetting and IP addressing
+* Clarify the role of routers, switches, and gateways
+* Explain theoretical models such as the OSI model
 
-However, the NetPractice exercises themselves were solved independently. The configurations were analyzed and completed manually based on the networking concepts learned.
+However, the NetPractice exercises themselves were solved independently.
+All network configurations were analyzed and implemented manually based on the networking concepts learned.
